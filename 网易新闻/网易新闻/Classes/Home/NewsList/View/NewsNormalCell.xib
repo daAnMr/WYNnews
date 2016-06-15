@@ -22,29 +22,38 @@
                             <constraint firstAttribute="width" constant="102" id="hWD-GJ-F7l"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-Ai-090">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSa-Ai-090">
                         <rect key="frame" x="125" y="8" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-qV-Uej">
-                        <rect key="frame" x="245" y="60" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-qV-Uej">
+                        <rect key="frame" x="254" y="66" width="33" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="W0r-my-hrr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="dSa-Ai-090" firstAttribute="top" secondItem="3jb-VI-X45" secondAttribute="top" id="QoP-TC-qdo"/>
+                    <constraint firstAttribute="bottom" secondItem="3jb-VI-X45" secondAttribute="bottom" constant="8" id="TEy-vL-fix"/>
                     <constraint firstAttribute="trailingMargin" secondItem="kn6-qV-Uej" secondAttribute="trailing" constant="25" id="WLd-Mk-fe9"/>
                     <constraint firstItem="3jb-VI-X45" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Wya-Ow-dcl"/>
                     <constraint firstItem="dSa-Ai-090" firstAttribute="leading" secondItem="3jb-VI-X45" secondAttribute="trailing" constant="13" id="fpN-f7-3rx"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dSa-Ai-090" secondAttribute="trailing" constant="12" id="jbC-S4-SBg"/>
                     <constraint firstItem="3jb-VI-X45" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="jhe-fh-ah0"/>
-                    <constraint firstAttribute="bottom" secondItem="kn6-qV-Uej" secondAttribute="bottom" constant="11" id="rHp-g3-GdK"/>
+                    <constraint firstAttribute="bottom" secondItem="kn6-qV-Uej" secondAttribute="bottom" constant="11" id="x3T-8w-Avm"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="3jb-VI-X45" id="1a8-sa-AdB"/>
+                <outlet property="replyLable" destination="kn6-qV-Uej" id="AU7-yK-cOG"/>
+                <outlet property="titleLeble" destination="dSa-Ai-090" id="UPS-j7-kN4"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

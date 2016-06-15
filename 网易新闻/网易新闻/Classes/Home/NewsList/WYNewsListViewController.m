@@ -8,7 +8,7 @@
 
 #import "WYNewsListViewController.h"
 #import "WYNewListModl.h"
-
+#import "NewsNormalCell.h"
 static NSString *cellId = @"cellId";
 @interface WYNewsListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -36,9 +36,16 @@ static NSString *cellId = @"cellId";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    NewsNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    WYNewListModl *model = _newsList[indexPath.row];
     
-    cell.textLabel.text = _newsList[indexPath.row].title;
+    cell.titleLeble.text = model.title;
+    
+    NSURL *iconURL = [NSURL URLWithString:model.imgsrc];
+    [cell.iconView sd_setImageWithURL:iconURL];
+    
+    cell.replyLable.text = @(model.replyCount).description;
+
     
     return cell;
 
@@ -75,9 +82,13 @@ static NSString *cellId = @"cellId";
     }];
 
     
-    [tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    //[tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    [tv registerNib:[UINib nibWithNibName:@"NewsNormalCell" bundle:nil] forCellReuseIdentifier:cellId];
 
-
+    tv.estimatedRowHeight = 100;
+    tv.rowHeight = UITableViewAutomaticDimension;
+//    tv.rowHeight = 100;
+    
     tv.dataSource = self;
     tv.delegate = self;
     _tableView = tv;

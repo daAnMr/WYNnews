@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface NewsNormalCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLeble;
+
+@property (weak, nonatomic) IBOutlet UILabel *replyLable;
+
 
 @end

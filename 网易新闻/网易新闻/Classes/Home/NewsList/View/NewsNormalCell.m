@@ -12,13 +12,11 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+
+    _replyLable.backgroundColor = [UIColor cz_colorWithHex:0xf1f1f1];
+    _replyLable.layer.cornerRadius = 4;
+    _replyLable.layer.masksToBounds = YES;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end

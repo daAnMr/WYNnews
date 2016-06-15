@@ -17,9 +17,11 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        NSURL *baseURL = [NSURL URLWithString:@"http://c.m.163.com/nc/"];
+        NSURL *baseURL = [NSURL URLWithString:@"http://c.m.163.com/nc/article/"];
         
         instance = [[self alloc] initWithBaseURL:baseURL];
+        
+        instance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html", nil];
     });
 
     return instance;
@@ -43,7 +45,7 @@
 
 - (void)newsListWithCategory:(NSString *)category start:(NSInteger)start completion:(void (^)(NSArray *, NSError *))completion {
     
-    NSString *urlString = [NSString stringWithFormat:@"article/list/%@/%zd-20.html", category, start];
+    NSString *urlString = [NSString stringWithFormat:@"headline/%@/%zd-20.html", category, start];
     
     [self GETRequest:urlString parameters:nil completion:^(NSDictionary *json, NSError *error) {
         
