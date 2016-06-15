@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//新闻列表页面,根据URL加载不同的新闻列表数据
 @interface WYNewsListViewController : UIViewController
+
+//新闻列表URL字符串
+@property (nonatomic,copy) NSString *urlString;
+
 
 @end
