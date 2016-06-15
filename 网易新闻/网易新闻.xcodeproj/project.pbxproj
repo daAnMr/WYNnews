@@ -25,6 +25,8 @@
 		FAD9AB0C1D110E0F00740626 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAFC1D110E0F00740626 /* UIView+CZAddition.m */; };
 		FAD9AB0D1D110E0F00740626 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAFE1D110E0F00740626 /* UIViewController+CZAddition.m */; };
 		FAD9AB0E1D110E0F00740626 /* CZNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AB011D110E0F00740626 /* CZNetworkManager.m */; };
+		FAD9AB161D11108800740626 /* WYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AB151D11108800740626 /* WYHomeViewController.m */; };
+		FAD9AB191D1110CD00740626 /* WYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AB181D1110CD00740626 /* WYMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		FAD9AAFE1D110E0F00740626 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		FAD9AB001D110E0F00740626 /* CZNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNetworkManager.h; sourceTree = "<group>"; };
 		FAD9AB011D110E0F00740626 /* CZNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZNetworkManager.m; sourceTree = "<group>"; };
+		FAD9AB141D11108800740626 /* WYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYHomeViewController.h; sourceTree = "<group>"; };
+		FAD9AB151D11108800740626 /* WYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WYHomeViewController.m; sourceTree = "<group>"; usesTabs = 0; };
+		FAD9AB171D1110CD00740626 /* WYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMainViewController.h; sourceTree = "<group>"; };
+		FAD9AB181D1110CD00740626 /* WYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD9AAE41D110E0F00740626 /* Tools */,
+				FAD9AB0F1D11100E00740626 /* Classes */,
 				FA1DBDED1D10F20E00EE72EC /* AppDelegate.h */,
 				FA1DBDEE1D10F20E00EE72EC /* AppDelegate.m */,
 				FA1DBDF61D10F20F00EE72EC /* Assets.xcassets */,
@@ -186,6 +193,49 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
+		FAD9AB0F1D11100E00740626 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9AB101D11100E00740626 /* Home */,
+				FAD9AB131D11100E00740626 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FAD9AB101D11100E00740626 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9AB111D11100E00740626 /* NewsDetail */,
+				FAD9AB121D11100E00740626 /* NewsList */,
+				FAD9AB141D11108800740626 /* WYHomeViewController.h */,
+				FAD9AB151D11108800740626 /* WYHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAD9AB111D11100E00740626 /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		FAD9AB121D11100E00740626 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		FAD9AB131D11100E00740626 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9AB171D1110CD00740626 /* WYMainViewController.h */,
+				FAD9AB181D1110CD00740626 /* WYMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +265,7 @@
 		FA1DBDDF1D10F20E00EE72EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WY;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = MacBook;
 				TargetAttributes = {
@@ -316,8 +367,10 @@
 				FA1DBDEF1D10F20E00EE72EC /* AppDelegate.m in Sources */,
 				FAD9AB081D110E0F00740626 /* UIButton+CZAddition.m in Sources */,
 				FAD9AB0C1D110E0F00740626 /* UIView+CZAddition.m in Sources */,
+				FAD9AB191D1110CD00740626 /* WYMainViewController.m in Sources */,
 				FAD9AB061D110E0F00740626 /* NSString+CZHash.m in Sources */,
 				FAD9AB0A1D110E0F00740626 /* UILabel+CZAddition.m in Sources */,
+				FAD9AB161D11108800740626 /* WYHomeViewController.m in Sources */,
 				FAD9AB051D110E0F00740626 /* NSString+CZBase64.m in Sources */,
 				FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */,
 				FAD9AB0E1D110E0F00740626 /* CZNetworkManager.m in Sources */,
