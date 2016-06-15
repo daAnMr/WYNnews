@@ -45,7 +45,7 @@
 
 - (void)newsListWithCategory:(NSString *)category start:(NSInteger)start completion:(void (^)(NSArray *, NSError *))completion {
     
-    NSString *urlString = [NSString stringWithFormat:@"headline/%@/%zd-20.html", category, start];
+    NSString *urlString = [NSString stringWithFormat:@"list/%@/%zd-20.html", category, start];
     
     [self GETRequest:urlString parameters:nil completion:^(NSDictionary *json, NSError *error) {
         

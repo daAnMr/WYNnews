@@ -19,6 +19,8 @@
 		FAB56C551D118729001B841B /* NewsNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB56C531D118729001B841B /* NewsNormalCell.xib */; };
 		FAB56C5A1D119A01001B841B /* WYNewsImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C581D119A01001B841B /* WYNewsImagesCell.m */; };
 		FAB56C5D1D119C9B001B841B /* WYNewsImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB56C5C1D119C9B001B841B /* WYNewsImagesCell.xib */; };
+		FAB56C611D11A1B0001B841B /* WYDTImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C5F1D11A1B0001B841B /* WYDTImageCell.m */; };
+		FAB56C641D11A292001B841B /* WYDTImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB56C631D11A292001B841B /* WYDTImageCell.xib */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -60,6 +62,9 @@
 		FAB56C571D119A01001B841B /* WYNewsImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewsImagesCell.h; sourceTree = "<group>"; };
 		FAB56C581D119A01001B841B /* WYNewsImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewsImagesCell.m; sourceTree = "<group>"; };
 		FAB56C5C1D119C9B001B841B /* WYNewsImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYNewsImagesCell.xib; sourceTree = "<group>"; };
+		FAB56C5E1D11A1B0001B841B /* WYDTImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYDTImageCell.h; sourceTree = "<group>"; };
+		FAB56C5F1D11A1B0001B841B /* WYDTImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYDTImageCell.m; sourceTree = "<group>"; };
+		FAB56C631D11A292001B841B /* WYDTImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYDTImageCell.xib; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -193,6 +198,9 @@
 				FAB56C571D119A01001B841B /* WYNewsImagesCell.h */,
 				FAB56C581D119A01001B841B /* WYNewsImagesCell.m */,
 				FAB56C5C1D119C9B001B841B /* WYNewsImagesCell.xib */,
+				FAB56C5E1D11A1B0001B841B /* WYDTImageCell.h */,
+				FAB56C5F1D11A1B0001B841B /* WYDTImageCell.m */,
+				FAB56C631D11A292001B841B /* WYDTImageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +369,7 @@
 				FAB56C5D1D119C9B001B841B /* WYNewsImagesCell.xib in Resources */,
 				FAB56C551D118729001B841B /* NewsNormalCell.xib in Resources */,
 				FA1DBDFA1D10F20F00EE72EC /* LaunchScreen.storyboard in Resources */,
+				FAB56C641D11A292001B841B /* WYDTImageCell.xib in Resources */,
 				FA1DBDF71D10F20F00EE72EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +451,7 @@
 				FAD9AB0D1D110E0F00740626 /* UIViewController+CZAddition.m in Sources */,
 				FAD9AB0B1D110E0F00740626 /* UIScreen+CZAddition.m in Sources */,
 				FA1DBDEC1D10F20E00EE72EC /* main.m in Sources */,
+				FAB56C611D11A1B0001B841B /* WYDTImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
