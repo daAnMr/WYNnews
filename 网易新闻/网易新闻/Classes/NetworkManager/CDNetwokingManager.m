@@ -7,11 +7,7 @@
 //
 
 #import "CDNetwokingManager.h"
-#import <AFNetworking.h>
-#import <NSObject+YYModel.h>
-#import <UIImageView+WebCache.h>
-#import "CZNetworkManager.h"
-#import "CZAdditions.h"
+
 @implementation CDNetwokingManager
 
 + (instancetype)sharedManager {

@@ -51,10 +51,10 @@
 		FAB56C481D112DB1001B841B /* CDNetwokingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDNetwokingManager.m; sourceTree = "<group>"; };
 		FAB56C4B1D113C3E001B841B /* WYNewListModl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewListModl.h; sourceTree = "<group>"; };
 		FAB56C4C1D113C3E001B841B /* WYNewListModl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewListModl.m; sourceTree = "<group>"; };
-		FAB56C4F1D118605001B841B /* WYPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYPch.pch; sourceTree = "<group>"; };
 		FAB56C511D118729001B841B /* NewsNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsNormalCell.h; sourceTree = "<group>"; };
 		FAB56C521D118729001B841B /* NewsNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsNormalCell.m; sourceTree = "<group>"; };
 		FAB56C531D118729001B841B /* NewsNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsNormalCell.xib; sourceTree = "<group>"; };
+		FAB56C561D1188B8001B841B /* WYNews.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNews.pch; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -147,6 +147,7 @@
 				FA1DBDF81D10F20F00EE72EC /* LaunchScreen.storyboard */,
 				FA1DBDFB1D10F20F00EE72EC /* Info.plist */,
 				FA1DBDEA1D10F20E00EE72EC /* Supporting Files */,
+				FAB56C561D1188B8001B841B /* WYNews.pch */,
 			);
 			path = "网易新闻";
 			sourceTree = "<group>";
@@ -272,7 +273,6 @@
 				FAB56C4A1D113BFA001B841B /* Model */,
 				FAB56C421D11244D001B841B /* WYNewsListViewController.h */,
 				FAB56C431D11244D001B841B /* WYNewsListViewController.m */,
-				FAB56C4F1D118605001B841B /* WYPch.pch */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -544,7 +544,7 @@
 			baseConfigurationReference = CAA782C1AEF34262413DF24D /* Pods-网易新闻.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = "网易新闻/WYNews.pch";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,7 +558,7 @@
 			baseConfigurationReference = A119AFEF03683E883E093252 /* Pods-网易新闻.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "";
+				GCC_PREFIX_HEADER = "网易新闻/WYNews.pch";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

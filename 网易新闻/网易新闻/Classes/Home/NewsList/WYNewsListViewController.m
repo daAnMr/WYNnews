@@ -7,10 +7,8 @@
 //
 
 #import "WYNewsListViewController.h"
-#import <Masonry.h>
-#import "CDNetwokingManager.h"
 #import "WYNewListModl.h"
-#import <YYModel.h>
+
 static NSString *cellId = @"cellId";
 @interface WYNewsListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
