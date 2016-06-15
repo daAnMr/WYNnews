@@ -13,6 +13,7 @@
 		FA1DBDF71D10F20F00EE72EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1DBDF61D10F20F00EE72EC /* Assets.xcassets */; };
 		FA1DBDFA1D10F20F00EE72EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1DBDF81D10F20F00EE72EC /* LaunchScreen.storyboard */; };
 		FAB56C441D11244D001B841B /* WYNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C431D11244D001B841B /* WYNewsListViewController.m */; };
+		FAB56C491D112DB1001B841B /* CDNetwokingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C481D112DB1001B841B /* CDNetwokingManager.m */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -44,6 +45,8 @@
 		FAB56C421D11244D001B841B /* WYNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewsListViewController.h; sourceTree = "<group>"; };
 		FAB56C431D11244D001B841B /* WYNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewsListViewController.m; sourceTree = "<group>"; };
 		FAB56C451D11261C001B841B /* WYpch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYpch.pch; sourceTree = "<group>"; };
+		FAB56C471D112DB1001B841B /* CDNetwokingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDNetwokingManager.h; sourceTree = "<group>"; };
+		FAB56C481D112DB1001B841B /* CDNetwokingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDNetwokingManager.m; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD9AAE41D110E0F00740626 /* Tools */,
+				FAB56C461D112D61001B841B /* NetworkManager */,
 				FAD9AB0F1D11100E00740626 /* Classes */,
 				FA1DBDED1D10F20E00EE72EC /* AppDelegate.h */,
 				FA1DBDEE1D10F20E00EE72EC /* AppDelegate.m */,
@@ -145,6 +149,16 @@
 				FA1DBDEB1D10F20E00EE72EC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB56C461D112D61001B841B /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				FAB56C471D112DB1001B841B /* CDNetwokingManager.h */,
+				FAB56C481D112DB1001B841B /* CDNetwokingManager.m */,
+			);
+			name = NetworkManager;
+			path = Classes/NetworkManager;
 			sourceTree = "<group>";
 		};
 		FAD9AAE41D110E0F00740626 /* Tools */ = {
@@ -368,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD9AB091D110E0F00740626 /* UIColor+CZAddition.m in Sources */,
+				FAB56C491D112DB1001B841B /* CDNetwokingManager.m in Sources */,
 				FAB56C441D11244D001B841B /* WYNewsListViewController.m in Sources */,
 				FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */,
 				FAD9AB071D110E0F00740626 /* NSString+CZPath.m in Sources */,
