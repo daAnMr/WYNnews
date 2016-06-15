@@ -44,7 +44,7 @@
 		FA1DBDFB1D10F20F00EE72EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB56C421D11244D001B841B /* WYNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewsListViewController.h; sourceTree = "<group>"; };
 		FAB56C431D11244D001B841B /* WYNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewsListViewController.m; sourceTree = "<group>"; };
-		FAB56C451D11261C001B841B /* WYpch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYpch.pch; sourceTree = "<group>"; };
+		FAB56C451D11261C001B841B /* WYXW.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYXW.pch; sourceTree = "<group>"; };
 		FAB56C471D112DB1001B841B /* CDNetwokingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDNetwokingManager.h; sourceTree = "<group>"; };
 		FAB56C481D112DB1001B841B /* CDNetwokingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDNetwokingManager.m; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 			children = (
 				FAB56C421D11244D001B841B /* WYNewsListViewController.h */,
 				FAB56C431D11244D001B841B /* WYNewsListViewController.m */,
-				FAB56C451D11261C001B841B /* WYpch.pch */,
+				FAB56C451D11261C001B841B /* WYXW.pch */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -512,6 +512,7 @@
 			baseConfigurationReference = CAA782C1AEF34262413DF24D /* Pods-网易新闻.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -525,6 +526,7 @@
 			baseConfigurationReference = A119AFEF03683E883E093252 /* Pods-网易新闻.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

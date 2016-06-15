@@ -8,9 +8,13 @@
 
 #import "WYNewsListViewController.h"
 #import <Masonry.h>
+#import "CDNetwokingManager.h"
 static NSString *cellId = @"cellId";
 @interface WYNewsListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+@property (nonatomic,weak) UITableView *tableView;
+
+@property (nonatomic, strong) NSMutableArray *newsList;
 @end
 
 @implementation WYNewsListViewController
@@ -18,9 +22,10 @@ static NSString *cellId = @"cellId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _urlString = @"http://c.m.163.com/nc/article/headline/T1348647853363/0-20.html";
+    _category = @"T1348647853363";
 
     [self setupUI];
+    [self loaData];
 }
 
 #pragma mark--UITableViewDataSource
@@ -36,6 +41,24 @@ static NSString *cellId = @"cellId";
     cell.textLabel.text = @(indexPath.row).description;
     
     return cell;
+
+
+}
+
+#pragma mark--加载数据
+- (void)loaData {
+
+    [[CDNetwokingManager sharedManager] newListWithCategory:_category start:0 completion:^(NSArray *array, NSError *error) {
+        
+        NSLog(@"%@",array);
+        
+        self.newsList = [NSMutableArray arrayWithArray:array];
+        
+        [self.tableView reloadData];
+    }];
+
+
+
 
 
 }
@@ -56,6 +79,7 @@ static NSString *cellId = @"cellId";
 
     tv.dataSource = self;
     tv.delegate = self;
+    _tableView = tv;
 }
 
 
