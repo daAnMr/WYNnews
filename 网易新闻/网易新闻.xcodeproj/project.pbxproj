@@ -12,6 +12,7 @@
 		FA1DBDEF1D10F20E00EE72EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1DBDEE1D10F20E00EE72EC /* AppDelegate.m */; };
 		FA1DBDF71D10F20F00EE72EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1DBDF61D10F20F00EE72EC /* Assets.xcassets */; };
 		FA1DBDFA1D10F20F00EE72EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1DBDF81D10F20F00EE72EC /* LaunchScreen.storyboard */; };
+		FAB56C441D11244D001B841B /* WYNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C431D11244D001B841B /* WYNewsListViewController.m */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -40,6 +41,8 @@
 		FA1DBDF61D10F20F00EE72EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1DBDF91D10F20F00EE72EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA1DBDFB1D10F20F00EE72EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB56C421D11244D001B841B /* WYNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewsListViewController.h; sourceTree = "<group>"; };
+		FAB56C431D11244D001B841B /* WYNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewsListViewController.m; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 		FAD9AB121D11100E00740626 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
+				FAB56C421D11244D001B841B /* WYNewsListViewController.h */,
+				FAB56C431D11244D001B841B /* WYNewsListViewController.m */,
 			);
 			path = NewsList;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD9AB091D110E0F00740626 /* UIColor+CZAddition.m in Sources */,
+				FAB56C441D11244D001B841B /* WYNewsListViewController.m in Sources */,
 				FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */,
 				FAD9AB071D110E0F00740626 /* NSString+CZPath.m in Sources */,
 				FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */,

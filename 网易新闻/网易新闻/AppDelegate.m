@@ -24,7 +24,7 @@
     _window.backgroundColor = [UIColor whiteColor];
 
     
-    Class cls = NSClassFromString(@"WYMainViewController");
+    Class cls = NSClassFromString(@"WYNewsListViewController");
 
     UIViewController *vc = [cls new];
     
