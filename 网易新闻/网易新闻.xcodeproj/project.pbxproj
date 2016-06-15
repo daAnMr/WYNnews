@@ -17,6 +17,8 @@
 		FAB56C4D1D113C3E001B841B /* WYNewListModl.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C4C1D113C3E001B841B /* WYNewListModl.m */; };
 		FAB56C541D118729001B841B /* NewsNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C521D118729001B841B /* NewsNormalCell.m */; };
 		FAB56C551D118729001B841B /* NewsNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB56C531D118729001B841B /* NewsNormalCell.xib */; };
+		FAB56C5A1D119A01001B841B /* WYNewsImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C581D119A01001B841B /* WYNewsImagesCell.m */; };
+		FAB56C5D1D119C9B001B841B /* WYNewsImagesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB56C5C1D119C9B001B841B /* WYNewsImagesCell.xib */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -55,6 +57,9 @@
 		FAB56C521D118729001B841B /* NewsNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsNormalCell.m; sourceTree = "<group>"; };
 		FAB56C531D118729001B841B /* NewsNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsNormalCell.xib; sourceTree = "<group>"; };
 		FAB56C561D1188B8001B841B /* WYNews.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNews.pch; sourceTree = "<group>"; };
+		FAB56C571D119A01001B841B /* WYNewsImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewsImagesCell.h; sourceTree = "<group>"; };
+		FAB56C581D119A01001B841B /* WYNewsImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewsImagesCell.m; sourceTree = "<group>"; };
+		FAB56C5C1D119C9B001B841B /* WYNewsImagesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYNewsImagesCell.xib; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -185,6 +190,9 @@
 				FAB56C511D118729001B841B /* NewsNormalCell.h */,
 				FAB56C521D118729001B841B /* NewsNormalCell.m */,
 				FAB56C531D118729001B841B /* NewsNormalCell.xib */,
+				FAB56C571D119A01001B841B /* WYNewsImagesCell.h */,
+				FAB56C581D119A01001B841B /* WYNewsImagesCell.m */,
+				FAB56C5C1D119C9B001B841B /* WYNewsImagesCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB56C5D1D119C9B001B841B /* WYNewsImagesCell.xib in Resources */,
 				FAB56C551D118729001B841B /* NewsNormalCell.xib in Resources */,
 				FA1DBDFA1D10F20F00EE72EC /* LaunchScreen.storyboard in Resources */,
 				FA1DBDF71D10F20F00EE72EC /* Assets.xcassets in Resources */,
@@ -425,6 +434,7 @@
 				FAD9AB061D110E0F00740626 /* NSString+CZHash.m in Sources */,
 				FAD9AB0A1D110E0F00740626 /* UILabel+CZAddition.m in Sources */,
 				FAB56C541D118729001B841B /* NewsNormalCell.m in Sources */,
+				FAB56C5A1D119A01001B841B /* WYNewsImagesCell.m in Sources */,
 				FAD9AB161D11108800740626 /* WYHomeViewController.m in Sources */,
 				FAD9AB051D110E0F00740626 /* NSString+CZBase64.m in Sources */,
 				FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */,

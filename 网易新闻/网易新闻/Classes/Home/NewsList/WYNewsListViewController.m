@@ -9,6 +9,7 @@
 #import "WYNewsListViewController.h"
 #import "WYNewListModl.h"
 #import "NewsNormalCell.h"
+#import "WYNewsImagesCell.h"
 static NSString *cellId = @"cellId";
 @interface WYNewsListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -36,7 +37,7 @@ static NSString *cellId = @"cellId";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    NewsNormalCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    WYNewsImagesCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     WYNewListModl *model = _newsList[indexPath.row];
     
     cell.titleLeble.text = model.title;
@@ -44,6 +45,19 @@ static NSString *cellId = @"cellId";
     NSURL *iconURL = [NSURL URLWithString:model.imgsrc];
     [cell.iconView sd_setImageWithURL:iconURL];
     
+    if (model.imgextra != nil) {
+        NSInteger index = 0;
+        
+        for (NSDictionary *dict in model.imgextra) {
+            
+            NSString *urlString = dict[@"imgsrc"];
+            NSURL *url = [NSURL URLWithString:urlString];
+            
+            [cell.extraimageView[index] sd_setImageWithURL:url];
+            
+            index++;
+        }
+    }
     cell.replyLable.text = @(model.replyCount).description;
 
     
@@ -83,7 +97,7 @@ static NSString *cellId = @"cellId";
 
     
     //[tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
-    [tv registerNib:[UINib nibWithNibName:@"NewsNormalCell" bundle:nil] forCellReuseIdentifier:cellId];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsImagesCell" bundle:nil] forCellReuseIdentifier:cellId];
 
     tv.estimatedRowHeight = 100;
     tv.rowHeight = UITableViewAutomaticDimension;
