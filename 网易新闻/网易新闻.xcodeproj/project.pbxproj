@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DE3AACFAA6806E5F0F90916 /* libPods-网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DE7B9B9D8DF64444CAF996 /* libPods-网易新闻.a */; };
 		FA1DBDEC1D10F20E00EE72EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1DBDEB1D10F20E00EE72EC /* main.m */; };
 		FA1DBDEF1D10F20E00EE72EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1DBDEE1D10F20E00EE72EC /* AppDelegate.m */; };
 		FA1DBDF21D10F20E00EE72EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1DBDF11D10F20E00EE72EC /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09DE7B9B9D8DF64444CAF996 /* libPods-网易新闻.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-网易新闻.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A119AFEF03683E883E093252 /* Pods-网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.release.xcconfig"; sourceTree = "<group>"; };
+		CAA782C1AEF34262413DF24D /* Pods-网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
 		FA1DBDE71D10F20E00EE72EC /* 网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1DBDEB1D10F20E00EE72EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA1DBDED1D10F20E00EE72EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE3AACFAA6806E5F0F90916 /* libPods-网易新闻.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45BF8784B34E7D886E8B6840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09DE7B9B9D8DF64444CAF996 /* libPods-网易新闻.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD4E901F01FF3CA4C2F6346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAA782C1AEF34262413DF24D /* Pods-网易新闻.debug.xcconfig */,
+				A119AFEF03683E883E093252 /* Pods-网易新闻.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA1DBDDE1D10F20E00EE72EC = {
 			isa = PBXGroup;
 			children = (
 				FA1DBDE91D10F20E00EE72EC /* 网易新闻 */,
 				FA1DBDE81D10F20E00EE72EC /* Products */,
+				DFD4E901F01FF3CA4C2F6346 /* Pods */,
+				45BF8784B34E7D886E8B6840 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA1DBDFE1D10F20F00EE72EC /* Build configuration list for PBXNativeTarget "网易新闻" */;
 			buildPhases = (
+				4F71FB71FCE2000C88F77242 /* [CP] Check Pods Manifest.lock */,
 				FA1DBDE31D10F20E00EE72EC /* Sources */,
 				FA1DBDE41D10F20E00EE72EC /* Frameworks */,
 				FA1DBDE51D10F20E00EE72EC /* Resources */,
+				CF8B4B343E09EB1EF6293E9F /* [CP] Embed Pods Frameworks */,
+				1C4A7245B3BC486663C4C89E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4A7245B3BC486663C4C89E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F71FB71FCE2000C88F77242 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF8B4B343E09EB1EF6293E9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-网易新闻/Pods-网易新闻-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA1DBDE31D10F20E00EE72EC /* Sources */ = {
@@ -268,6 +343,7 @@
 		};
 		FA1DBDFF1D10F20F00EE72EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA782C1AEF34262413DF24D /* Pods-网易新闻.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "网易新闻/Info.plist";
@@ -279,6 +355,7 @@
 		};
 		FA1DBE001D10F20F00EE72EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A119AFEF03683E883E093252 /* Pods-网易新闻.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "网易新闻/Info.plist";
@@ -307,6 +384,7 @@
 				FA1DBE001D10F20F00EE72EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
