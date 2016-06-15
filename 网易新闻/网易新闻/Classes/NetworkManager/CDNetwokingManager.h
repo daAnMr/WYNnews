@@ -14,5 +14,5 @@
 + (instancetype)sharedManager;
 
 //加载新闻列表
-- (void)newListWithCategory:(NSString *)category start:(NSInteger)start completion:(void(^)(NSArray *array,NSError *error))completion;
+- (void)newsListWithCategory:(NSString *)category start:(NSInteger)start completion:(void (^)(NSArray *, NSError *))completion;
 @end

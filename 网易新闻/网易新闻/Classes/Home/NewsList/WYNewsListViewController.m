@@ -9,12 +9,14 @@
 #import "WYNewsListViewController.h"
 #import <Masonry.h>
 #import "CDNetwokingManager.h"
+#import "WYNewListModl.h"
+#import <YYModel.h>
 static NSString *cellId = @"cellId";
 @interface WYNewsListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,weak) UITableView *tableView;
 
-@property (nonatomic, strong) NSMutableArray *newsList;
+@property (nonatomic, strong) NSMutableArray <WYNewListModl*>*newsList;
 @end
 
 @implementation WYNewsListViewController
@@ -31,14 +33,14 @@ static NSString *cellId = @"cellId";
 #pragma mark--UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 10;
+    return _newsList.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     
-    cell.textLabel.text = @(indexPath.row).description;
+    cell.textLabel.text = _newsList[indexPath.row].title;
     
     return cell;
 
@@ -48,15 +50,16 @@ static NSString *cellId = @"cellId";
 #pragma mark--加载数据
 - (void)loaData {
 
-    [[CDNetwokingManager sharedManager] newListWithCategory:_category start:0 completion:^(NSArray *array, NSError *error) {
-        
+    [[CDNetwokingManager sharedManager]newsListWithCategory:_category start:0 completion:^(NSArray *array, NSError *error) {
         NSLog(@"%@",array);
+        //字典转模型
+        NSArray *list = [NSArray yy_modelArrayWithClass:[WYNewListModl class] json:array];
         
-        self.newsList = [NSMutableArray arrayWithArray:array];
+        self.newsList = [NSMutableArray arrayWithArray:list];
         
         [self.tableView reloadData];
-    }];
 
+    }];
 
 
 
