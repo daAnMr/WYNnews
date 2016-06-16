@@ -38,11 +38,18 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1h-yi-dbl">
+                        <rect key="frame" x="10" y="138" width="31" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Kvq-dn-2Tx" secondAttribute="trailing" constant="10" id="0cP-bA-oTd"/>
                     <constraint firstItem="pv8-ax-CaR" firstAttribute="leading" secondItem="Kvq-dn-2Tx" secondAttribute="leading" id="0vk-du-mze"/>
                     <constraint firstItem="cSl-h2-VFV" firstAttribute="height" secondItem="qzn-8x-kPk" secondAttribute="height" id="1wz-DI-gP5"/>
+                    <constraint firstItem="JwY-tA-56H" firstAttribute="centerY" secondItem="U1h-yi-dbl" secondAttribute="centerY" id="3jX-O2-dgq"/>
                     <constraint firstAttribute="bottom" secondItem="JwY-tA-56H" secondAttribute="bottom" constant="10" id="9Pd-EE-vHY"/>
                     <constraint firstAttribute="trailing" secondItem="cSl-h2-VFV" secondAttribute="trailing" constant="10" id="B2f-Nt-iTJ"/>
                     <constraint firstItem="cSl-h2-VFV" firstAttribute="width" secondItem="qzn-8x-kPk" secondAttribute="width" id="CWh-qj-juH"/>
@@ -51,7 +58,9 @@
                     <constraint firstItem="cSl-h2-VFV" firstAttribute="centerY" secondItem="qzn-8x-kPk" secondAttribute="centerY" id="S0i-Fk-q9N"/>
                     <constraint firstItem="Kvq-dn-2Tx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TSL-y5-uVd"/>
                     <constraint firstItem="qzn-8x-kPk" firstAttribute="leading" secondItem="pv8-ax-CaR" secondAttribute="trailing" constant="10" id="Zzu-xW-L4c"/>
+                    <constraint firstAttribute="bottom" secondItem="U1h-yi-dbl" secondAttribute="bottom" constant="7" id="b4A-n9-bHT"/>
                     <constraint firstItem="cSl-h2-VFV" firstAttribute="leading" secondItem="qzn-8x-kPk" secondAttribute="trailing" constant="10" id="eUO-0F-YPq"/>
+                    <constraint firstItem="U1h-yi-dbl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="erv-xA-NYh"/>
                     <constraint firstItem="qzn-8x-kPk" firstAttribute="width" secondItem="pv8-ax-CaR" secondAttribute="width" id="foU-pY-LeW"/>
                     <constraint firstItem="Kvq-dn-2Tx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="gju-sc-8Te"/>
                     <constraint firstItem="qzn-8x-kPk" firstAttribute="centerY" secondItem="pv8-ax-CaR" secondAttribute="centerY" id="nAZ-jE-VaG"/>
@@ -62,6 +71,7 @@
             <connections>
                 <outlet property="iconView" destination="pv8-ax-CaR" id="GLp-9p-9Ei"/>
                 <outlet property="replyLable" destination="JwY-tA-56H" id="HSi-M8-SJZ"/>
+                <outlet property="sourceLabel" destination="U1h-yi-dbl" id="PbI-E8-yys"/>
                 <outlet property="titleLeble" destination="Kvq-dn-2Tx" id="idH-q4-vfm"/>
                 <outletCollection property="extraimageView" destination="qzn-8x-kPk" id="LaM-yL-mWI"/>
                 <outletCollection property="extraimageView" destination="cSl-h2-VFV" id="fEK-Uv-v35"/>

@@ -32,11 +32,20 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-Gb-VQA">
+                        <rect key="frame" x="10" y="171" width="31" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="qPK-3E-VfZ" firstAttribute="centerY" secondItem="k0d-Gb-VQA" secondAttribute="centerY" id="2hb-hJ-K4O"/>
                     <constraint firstAttribute="bottom" secondItem="qPK-3E-VfZ" secondAttribute="bottom" constant="10" id="3Sz-oD-6Q9"/>
                     <constraint firstAttribute="trailing" secondItem="qPK-3E-VfZ" secondAttribute="trailing" constant="10" id="4la-pW-J1Z"/>
                     <constraint firstAttribute="trailing" secondItem="yDW-Pz-n3a" secondAttribute="trailing" constant="10" id="81Y-kY-7sm"/>
+                    <constraint firstAttribute="bottom" secondItem="k0d-Gb-VQA" secondAttribute="bottom" constant="7" id="CS0-m0-X0j"/>
+                    <constraint firstItem="k0d-Gb-VQA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GJU-wp-OKx"/>
                     <constraint firstItem="qPK-3E-VfZ" firstAttribute="top" secondItem="yDW-Pz-n3a" secondAttribute="bottom" constant="9" id="HdW-DX-7ps"/>
                     <constraint firstItem="TAI-VH-bN1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VoW-KS-Llc"/>
                     <constraint firstItem="TAI-VH-bN1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="WG6-fP-TF8"/>
@@ -48,6 +57,7 @@
             <connections>
                 <outlet property="iconView" destination="yDW-Pz-n3a" id="JaB-1d-zBc"/>
                 <outlet property="replyLable" destination="qPK-3E-VfZ" id="n4o-qF-1jg"/>
+                <outlet property="sourceLabel" destination="k0d-Gb-VQA" id="YYC-Ca-1UU"/>
                 <outlet property="titleLeble" destination="TAI-VH-bN1" id="s1B-1E-aAr"/>
             </connections>
             <point key="canvasLocation" x="612" y="258"/>
