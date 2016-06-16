@@ -23,6 +23,8 @@
 		FAB6778C1D12F011005D89B5 /* UIImageView+CD_WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6778B1D12F011005D89B5 /* UIImageView+CD_WebImage.m */; };
 		FAB677901D12F7F1005D89B5 /* WYChannlView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6778F1D12F7F1005D89B5 /* WYChannlView.m */; };
 		FAB677921D12F804005D89B5 /* WYChannlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB677911D12F804005D89B5 /* WYChannlView.xib */; };
+		FAB677961D12FE62005D89B5 /* WYChannlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB677951D12FE62005D89B5 /* WYChannlModel.m */; };
+		FAB677981D12FF06005D89B5 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB677971D12FF06005D89B5 /* topic_news.json */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -69,6 +71,9 @@
 		FAB6778E1D12F7F1005D89B5 /* WYChannlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYChannlView.h; sourceTree = "<group>"; };
 		FAB6778F1D12F7F1005D89B5 /* WYChannlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYChannlView.m; sourceTree = "<group>"; };
 		FAB677911D12F804005D89B5 /* WYChannlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYChannlView.xib; sourceTree = "<group>"; };
+		FAB677941D12FE62005D89B5 /* WYChannlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYChannlModel.h; sourceTree = "<group>"; };
+		FAB677951D12FE62005D89B5 /* WYChannlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYChannlModel.m; sourceTree = "<group>"; };
+		FAB677971D12FF06005D89B5 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -216,6 +221,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FAB677931D12FE45005D89B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB677971D12FF06005D89B5 /* topic_news.json */,
+				FAB677941D12FE62005D89B5 /* WYChannlModel.h */,
+				FAB677951D12FE62005D89B5 /* WYChannlModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FAD9AAE41D110E0F00740626 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +295,7 @@
 		FAD9AB101D11100E00740626 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FAB677931D12FE45005D89B5 /* Model */,
 				FAB6778D1D12F778005D89B5 /* View */,
 				FAD9AB111D11100E00740626 /* NewsDetail */,
 				FAD9AB121D11100E00740626 /* NewsList */,
@@ -382,6 +398,7 @@
 			files = (
 				FAB677921D12F804005D89B5 /* WYChannlView.xib in Resources */,
 				FAB677891D12E64F005D89B5 /* WYHeaderCell.xib in Resources */,
+				FAB677981D12FF06005D89B5 /* topic_news.json in Resources */,
 				FAB56C5D1D119C9B001B841B /* WYNewsImagesCell.xib in Resources */,
 				FAB56C551D118729001B841B /* NewsNormalCell.xib in Resources */,
 				FA1DBDFA1D10F20F00EE72EC /* LaunchScreen.storyboard in Resources */,
@@ -452,6 +469,7 @@
 				FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */,
 				FAD9AB071D110E0F00740626 /* NSString+CZPath.m in Sources */,
 				FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */,
+				FAB677961D12FE62005D89B5 /* WYChannlModel.m in Sources */,
 				FA1DBDEF1D10F20E00EE72EC /* AppDelegate.m in Sources */,
 				FAD9AB081D110E0F00740626 /* UIButton+CZAddition.m in Sources */,
 				FAB56C671D11A672001B841B /* WYNewCell.m in Sources */,
