@@ -7,7 +7,12 @@
 //
 
 #import "WYChannlView.h"
+#import "WYChannlModel.h"
 
+@interface WYChannlView()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@end
 @implementation WYChannlView
 
 + (instancetype)channlView {
@@ -19,4 +24,20 @@
 
 }
 
+#pragma mark--设置数据
+-(void)setChannelList:(NSArray<WYChannlModel *> *)channelList {
+
+    _channelList = channelList;
+    
+    //添加控件
+    for (WYChannlModel *chanel in channelList) {
+        
+        UILabel *l = [UILabel cz_labelWithText:chanel.tname fontSize:14 color:[UIColor blackColor]];
+        
+        [_scrollView addSubview:l];
+    }
+
+
+
+}
 @end

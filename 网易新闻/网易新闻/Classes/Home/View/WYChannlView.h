@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class WYChannlModel;
 @interface WYChannlView : UIView
 
 //从xib加载并返回视图
 + (instancetype)channlView;
+
+//频道列表的数组
+@property (nonatomic,strong) NSArray <WYChannlModel *> *channelList;
 @end

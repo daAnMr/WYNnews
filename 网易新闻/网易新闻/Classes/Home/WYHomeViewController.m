@@ -10,7 +10,8 @@
 #import "WYChannlView.h"
 #import "WYChannlModel.h"
 @interface WYHomeViewController ()
-
+//频道视图
+@property (nonatomic,weak) WYChannlView *channelView;
 @end
 
 @implementation WYHomeViewController {
@@ -23,10 +24,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
-    
+    //加载频道数据
     _channelList = [WYChannlModel channelList];
     
-    NSLog(@"%@",_channelList);
+    //设置数据
+    _channelView.channelList = _channelList;
 }
 
 #pragma mark--设置界面
@@ -43,7 +45,7 @@
         make.left.right.equalTo(self.view);
         make.height.mas_equalTo(38);
     }];
-
+    _channelView = cv;
 }
 
 @end
