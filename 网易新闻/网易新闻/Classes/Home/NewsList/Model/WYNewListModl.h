@@ -30,4 +30,7 @@
 //是否大图标记
 @property (nonatomic,assign) BOOL imgType;
 
+//是否是顶部cell
+@property (nonatomic,assign) BOOL hasHead;
+
 @end

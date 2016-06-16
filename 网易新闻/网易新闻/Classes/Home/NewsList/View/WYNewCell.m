@@ -8,6 +8,17 @@
 
 #import "WYNewCell.h"
 
+@interface WYNewCell()
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLeble;
+
+@property (weak, nonatomic) IBOutlet UILabel *replyLable;
+
+@property (strong,nonatomic) IBOutletCollection(UIImageView) NSArray *extraimageView;
+@property (weak, nonatomic) IBOutlet UILabel *sourceLabel;
+
+@end
 @implementation WYNewCell
 
 - (void)awakeFromNib {
