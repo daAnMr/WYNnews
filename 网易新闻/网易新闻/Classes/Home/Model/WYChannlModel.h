@@ -15,4 +15,7 @@
 
 //频道ID
 @property (nonatomic,copy) NSString *tid;
+
+//返回频道模型数组
++ (NSArray *)channelList;
 @end

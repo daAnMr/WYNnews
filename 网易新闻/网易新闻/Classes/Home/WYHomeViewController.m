@@ -8,15 +8,25 @@
 
 #import "WYHomeViewController.h"
 #import "WYChannlView.h"
+#import "WYChannlModel.h"
 @interface WYHomeViewController ()
 
 @end
 
-@implementation WYHomeViewController
+@implementation WYHomeViewController {
+
+    NSArray <WYChannlModel *> *_channelList;
+
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    
+    _channelList = [WYChannlModel channelList];
+    
+    NSLog(@"%@",_channelList);
 }
 
 #pragma mark--设置界面
