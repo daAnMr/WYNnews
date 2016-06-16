@@ -7,7 +7,7 @@
 //
 
 #import "WYHomeViewController.h"
-
+#import "WYChannlView.h"
 @interface WYHomeViewController ()
 
 @end
@@ -16,22 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark--设置界面
+- (void)setupUI {
+    
+    self.view.backgroundColor = [UIColor cz_randomColor];
 
-/*
-#pragma mark - Navigation
+    //1.添加频道视图
+    WYChannlView *cv = [WYChannlView channlView];
+    [self.view addSubview:cv];
+    
+    [cv mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_topLayoutGuideBottom);
+        make.left.right.equalTo(self.view);
+        make.height.mas_equalTo(38);
+    }];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end

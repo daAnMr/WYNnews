@@ -21,6 +21,8 @@
 		FAB56C671D11A672001B841B /* WYNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C661D11A672001B841B /* WYNewCell.m */; };
 		FAB677891D12E64F005D89B5 /* WYHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB677881D12E64F005D89B5 /* WYHeaderCell.xib */; };
 		FAB6778C1D12F011005D89B5 /* UIImageView+CD_WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6778B1D12F011005D89B5 /* UIImageView+CD_WebImage.m */; };
+		FAB677901D12F7F1005D89B5 /* WYChannlView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6778F1D12F7F1005D89B5 /* WYChannlView.m */; };
+		FAB677921D12F804005D89B5 /* WYChannlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB677911D12F804005D89B5 /* WYChannlView.xib */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -64,6 +66,9 @@
 		FAB677881D12E64F005D89B5 /* WYHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYHeaderCell.xib; sourceTree = "<group>"; };
 		FAB6778A1D12F011005D89B5 /* UIImageView+CD_WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CD_WebImage.h"; sourceTree = "<group>"; };
 		FAB6778B1D12F011005D89B5 /* UIImageView+CD_WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CD_WebImage.m"; sourceTree = "<group>"; };
+		FAB6778E1D12F7F1005D89B5 /* WYChannlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYChannlView.h; sourceTree = "<group>"; };
+		FAB6778F1D12F7F1005D89B5 /* WYChannlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYChannlView.m; sourceTree = "<group>"; };
+		FAB677911D12F804005D89B5 /* WYChannlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYChannlView.xib; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -201,6 +206,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FAB6778D1D12F778005D89B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6778E1D12F7F1005D89B5 /* WYChannlView.h */,
+				FAB6778F1D12F7F1005D89B5 /* WYChannlView.m */,
+				FAB677911D12F804005D89B5 /* WYChannlView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FAD9AAE41D110E0F00740626 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +280,7 @@
 		FAD9AB101D11100E00740626 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FAB6778D1D12F778005D89B5 /* View */,
 				FAD9AB111D11100E00740626 /* NewsDetail */,
 				FAD9AB121D11100E00740626 /* NewsList */,
 				FAD9AB141D11108800740626 /* WYHomeViewController.h */,
@@ -364,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB677921D12F804005D89B5 /* WYChannlView.xib in Resources */,
 				FAB677891D12E64F005D89B5 /* WYHeaderCell.xib in Resources */,
 				FAB56C5D1D119C9B001B841B /* WYNewsImagesCell.xib in Resources */,
 				FAB56C551D118729001B841B /* NewsNormalCell.xib in Resources */,
@@ -429,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD9AB091D110E0F00740626 /* UIColor+CZAddition.m in Sources */,
+				FAB677901D12F7F1005D89B5 /* WYChannlView.m in Sources */,
 				FAB56C491D112DB1001B841B /* CDNetwokingManager.m in Sources */,
 				FAB56C441D11244D001B841B /* WYNewsListViewController.m in Sources */,
 				FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */,
