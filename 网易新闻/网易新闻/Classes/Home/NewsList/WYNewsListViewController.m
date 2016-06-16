@@ -8,10 +8,11 @@
 
 #import "WYNewsListViewController.h"
 #import "WYNewListModl.h"
-#import "NewsNormalCell.h"
-#import "WYNewsImagesCell.h"
-#import "WYDTImageCell.h"
-static NSString *cellId = @"cellId";
+#import "WYNewCell.h"
+
+static NSString *normalCellId = @"normalCellId";
+static NSString *imagesCellId = @"imagesCellId";
+static NSString *WYDImageCellId = @"WYDImageCellId";
 @interface WYNewsListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,weak) UITableView *tableView;
@@ -26,7 +27,6 @@ static NSString *cellId = @"cellId";
     
     _category = @"T1348650593803";
 
-
     [self setupUI];
     [self loaData];
 }
@@ -39,30 +39,28 @@ static NSString *cellId = @"cellId";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    WYDTImageCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    //根据模型判断Cell 的ID
     WYNewListModl *model = _newsList[indexPath.row];
     
-    cell.titleLeble.text = model.title;
-    
-    NSURL *iconURL = [NSURL URLWithString:model.imgsrc];
-    [cell.iconView sd_setImageWithURL:iconURL];
-    
-//    if (model.imgextra != nil) {
-//        NSInteger index = 0;
-//        
-//        for (NSDictionary *dict in model.imgextra) {
-//            
-//            NSString *urlString = dict[@"imgsrc"];
-//            NSURL *url = [NSURL URLWithString:urlString];
-//            
-//            [cell.extraimageView[index] sd_setImageWithURL:url];
-//            
-//            index++;
-//        }
-//    }
-    
-    cell.replyLable.text = @(model.replyCount).description;
+    NSString *cellId;
 
+    if (model.imgType) {
+        
+        cellId = WYDImageCellId;
+        
+    } else if(model.imgextra.count > 0) {
+    
+        cellId = imagesCellId;
+    
+    }else {
+    
+        cellId = normalCellId;
+    
+    }
+    
+    WYNewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    
+    cell.model = model;
     
     return cell;
 
@@ -83,10 +81,8 @@ static NSString *cellId = @"cellId";
 
     }];
 
-
-
-
 }
+
 #pragma mark--设置界面
 - (void)setupUI {
 
@@ -99,9 +95,11 @@ static NSString *cellId = @"cellId";
     }];
 
     
-    //[tv registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
-    [tv registerNib:[UINib nibWithNibName:@"WYDTImageCell" bundle:nil] forCellReuseIdentifier:cellId];
+    [tv registerNib:[UINib nibWithNibName:@"NewsNormalCell" bundle:nil] forCellReuseIdentifier:normalCellId];
+    [tv registerNib:[UINib nibWithNibName:@"WYNewsImagesCell" bundle:nil] forCellReuseIdentifier:imagesCellId];
+    [tv registerNib:[UINib nibWithNibName:@"WYDTImageCell" bundle:nil] forCellReuseIdentifier:WYDImageCellId];
 
+    
     tv.estimatedRowHeight = 100;
     tv.rowHeight = UITableViewAutomaticDimension;
 //    tv.rowHeight = 100;
