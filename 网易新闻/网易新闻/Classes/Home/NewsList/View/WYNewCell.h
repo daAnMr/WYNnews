@@ -9,15 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "WYNewListModl.h"
 @interface WYNewCell : UITableViewCell
-//@property (weak, nonatomic) IBOutlet UIImageView *iconView;
-//
-//@property (weak, nonatomic) IBOutlet UILabel *titleLeble;
-//
-//@property (weak, nonatomic) IBOutlet UILabel *replyLable;
-//
-//@property (strong,nonatomic) IBOutletCollection(UIImageView) NSArray *extraimageView;
-//@property (weak, nonatomic) IBOutlet UILabel *sourceLabel;
-
 
 @property (nonatomic,strong) WYNewListModl *model;
 

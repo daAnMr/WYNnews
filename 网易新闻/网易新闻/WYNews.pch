@@ -14,5 +14,6 @@
 #import <UIImageView+WebCache.h>
 #import "CDNetwokingManager.h"
 #import "CZAdditions.h"
+#import "UIImageView+CD_WebImage.h"
 
 #endif

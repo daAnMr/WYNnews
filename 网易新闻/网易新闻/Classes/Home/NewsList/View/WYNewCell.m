@@ -35,8 +35,10 @@
     _model = model;
     _sourceLabel.text = model.source;
     _titleLeble.text = model.title;
-    NSURL *iconURL = [NSURL URLWithString:model.imgsrc];
-    [_iconView sd_setImageWithURL:iconURL];
+    
+    //设置图片
+//    NSURL *iconURL = [NSURL URLWithString:model.imgsrc];
+    [_iconView cd_setImageWithURLString:model.imgsrc];
     
     if (model.imgextra != nil) {
         
@@ -44,12 +46,8 @@
         
         for (NSDictionary *dict in model.imgextra) {
             
-            NSString *urlString = dict[@"imgsrc"];
-            NSURL *url = [NSURL URLWithString:urlString];
-            
-            [_extraimageView[index] sd_setImageWithURL:url];
-            
-            index++;
+        [_extraimageView[index++] cd_setImageWithURLString:dict[@"imgsrc"]];
+        
         }
     }
 

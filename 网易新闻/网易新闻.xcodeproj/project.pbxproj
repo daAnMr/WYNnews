@@ -20,6 +20,7 @@
 		FAB56C641D11A292001B841B /* WYDTImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB56C631D11A292001B841B /* WYDTImageCell.xib */; };
 		FAB56C671D11A672001B841B /* WYNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB56C661D11A672001B841B /* WYNewCell.m */; };
 		FAB677891D12E64F005D89B5 /* WYHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB677881D12E64F005D89B5 /* WYHeaderCell.xib */; };
+		FAB6778C1D12F011005D89B5 /* UIImageView+CD_WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6778B1D12F011005D89B5 /* UIImageView+CD_WebImage.m */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -61,6 +62,8 @@
 		FAB56C651D11A672001B841B /* WYNewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNewCell.h; sourceTree = "<group>"; };
 		FAB56C661D11A672001B841B /* WYNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNewCell.m; sourceTree = "<group>"; };
 		FAB677881D12E64F005D89B5 /* WYHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYHeaderCell.xib; sourceTree = "<group>"; };
+		FAB6778A1D12F011005D89B5 /* UIImageView+CD_WebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CD_WebImage.h"; sourceTree = "<group>"; };
+		FAB6778B1D12F011005D89B5 /* UIImageView+CD_WebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CD_WebImage.m"; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 			children = (
 				FAD9AB001D110E0F00740626 /* CZNetworkManager.h */,
 				FAD9AB011D110E0F00740626 /* CZNetworkManager.m */,
+				FAB6778A1D12F011005D89B5 /* UIImageView+CD_WebImage.h */,
+				FAB6778B1D12F011005D89B5 /* UIImageView+CD_WebImage.m */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 				FAD9AB0A1D110E0F00740626 /* UILabel+CZAddition.m in Sources */,
 				FAD9AB161D11108800740626 /* WYHomeViewController.m in Sources */,
 				FAD9AB051D110E0F00740626 /* NSString+CZBase64.m in Sources */,
+				FAB6778C1D12F011005D89B5 /* UIImageView+CD_WebImage.m in Sources */,
 				FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */,
 				FAD9AB0E1D110E0F00740626 /* CZNetworkManager.m in Sources */,
 				FAD9AB0D1D110E0F00740626 /* UIViewController+CZAddition.m in Sources */,
