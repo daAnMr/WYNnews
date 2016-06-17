@@ -24,11 +24,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupUI];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     //加载频道数据
     _channelList = [WYChannlModel channelList];
     
     //设置数据
     _channelView.channelList = _channelList;
+    
+    
 }
 
 #pragma mark--设置界面

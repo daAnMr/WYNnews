@@ -25,6 +25,7 @@
 		FAB677921D12F804005D89B5 /* WYChannlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB677911D12F804005D89B5 /* WYChannlView.xib */; };
 		FAB677961D12FE62005D89B5 /* WYChannlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB677951D12FE62005D89B5 /* WYChannlModel.m */; };
 		FAB677981D12FF06005D89B5 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB677971D12FF06005D89B5 /* topic_news.json */; };
+		FAB6779B1D1307F2005D89B5 /* WYChannelLable.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB6779A1D1307F2005D89B5 /* WYChannelLable.m */; };
 		FAD9AB021D110E0F00740626 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAE81D110E0F00740626 /* NSArray+Log.m */; };
 		FAD9AB031D110E0F00740626 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEA1D110E0F00740626 /* NSAttributedString+CZAdditon.m */; };
 		FAD9AB041D110E0F00740626 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD9AAEC1D110E0F00740626 /* NSObject+CZRuntime.m */; };
@@ -74,6 +75,8 @@
 		FAB677941D12FE62005D89B5 /* WYChannlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYChannlModel.h; sourceTree = "<group>"; };
 		FAB677951D12FE62005D89B5 /* WYChannlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYChannlModel.m; sourceTree = "<group>"; };
 		FAB677971D12FF06005D89B5 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		FAB677991D1307F2005D89B5 /* WYChannelLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYChannelLable.h; sourceTree = "<group>"; };
+		FAB6779A1D1307F2005D89B5 /* WYChannelLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYChannelLable.m; sourceTree = "<group>"; };
 		FAD9AAE61D110E0F00740626 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		FAD9AAE71D110E0F00740626 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		FAD9AAE81D110E0F00740626 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 				FAB6778E1D12F7F1005D89B5 /* WYChannlView.h */,
 				FAB6778F1D12F7F1005D89B5 /* WYChannlView.m */,
 				FAB677911D12F804005D89B5 /* WYChannlView.xib */,
+				FAB677991D1307F2005D89B5 /* WYChannelLable.h */,
+				FAB6779A1D1307F2005D89B5 /* WYChannelLable.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,6 +491,7 @@
 				FAD9AB0D1D110E0F00740626 /* UIViewController+CZAddition.m in Sources */,
 				FAD9AB0B1D110E0F00740626 /* UIScreen+CZAddition.m in Sources */,
 				FA1DBDEC1D10F20E00EE72EC /* main.m in Sources */,
+				FAB6779B1D1307F2005D89B5 /* WYChannelLable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

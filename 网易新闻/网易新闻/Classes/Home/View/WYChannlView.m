@@ -8,7 +8,7 @@
 
 #import "WYChannlView.h"
 #import "WYChannlModel.h"
-
+#import "WYChannelLable.h"
 @interface WYChannlView()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -29,14 +29,31 @@
 
     _channelList = channelList;
     
+    //1.初始化数据
+    CGFloat x =20;
+    CGFloat margin = 8;
+    CGFloat height = _scrollView.bounds.size.height;
+    
     //添加控件
     for (WYChannlModel *chanel in channelList) {
         
-        UILabel *l = [UILabel cz_labelWithText:chanel.tname fontSize:14 color:[UIColor blackColor]];
+        WYChannelLable *l = [WYChannelLable channelLableWithTitle:chanel.tname];
+        
+        //2.设置lable位置
+        l.frame = CGRectMake(x, 0, l.bounds.size.width, height);
+        
+        //3.递增x
+        x += l.bounds.size.width + margin;
         
         [_scrollView addSubview:l];
     }
 
+    //scrollView的contentSize
+    _scrollView.contentSize = CGSizeMake(x, height);
+    
+    //取消滚动指示器
+    _scrollView.showsVerticalScrollIndicator = NO;
+    _scrollView.showsHorizontalScrollIndicator = NO;
 
 
 }

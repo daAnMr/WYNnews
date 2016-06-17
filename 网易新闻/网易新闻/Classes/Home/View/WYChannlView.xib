@@ -13,13 +13,10 @@
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-eA-0A4">
                     <rect key="frame" x="0.0" y="0.0" width="562" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="b75-Ag-N5m"/>
+                    </constraints>
                 </scrollView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navbar_left_more" translatesAutoresizingMaskIntoConstraints="NO" id="hT2-Xr-g2y">
-                    <rect key="frame" x="0.0" y="0.0" width="45" height="38"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navbar_right_more" translatesAutoresizingMaskIntoConstraints="NO" id="7wM-XG-s3r">
-                    <rect key="frame" x="525" y="0.0" width="45" height="38"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVu-B2-8TC">
                     <rect key="frame" x="570" y="8" width="22" height="22"/>
                     <constraints>
@@ -28,6 +25,12 @@
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <state key="normal" image="channel_nav_plus"/>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navbar_left_more" translatesAutoresizingMaskIntoConstraints="NO" id="hT2-Xr-g2y">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="38"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navbar_right_more" translatesAutoresizingMaskIntoConstraints="NO" id="7wM-XG-s3r">
+                    <rect key="frame" x="525" y="0.0" width="45" height="38"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
